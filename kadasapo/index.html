@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Git クイズ — HTMLを編集して答えよう</title>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+<div class="card">
+    <h1>🌿 Git クイズ</h1>
+    <p class="subtitle">全体像と流れをつかもう</p>
+
+    <div class="how-to">
+    <strong>📝 やり方</strong><br>
+    各問題の下にある <code>data-answer=""</code> の <strong>""の中</strong> に答えを直接書こう。<br>
+    保存して Go Live を更新すると、結果がここに表示されるよ！
+    </div>
+
+    <div class="score-bar">
+    <span class="score-label">正解数</span>
+    <div class="dots">
+        <div class="dot" id="dot0"></div>
+        <div class="dot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+    </div>
+        <span class="score-label" id="score-text">0 / 3</span>
+    </div>
+
+<!-- ====================================================
+    問題: git add / git commit / git push は
+            「ローカル」と「リモート」どちらで操作する？
+    
+    ★ Q1の答えをここに書く ★
+    下の data-answer="" の " " の中に答えを入力してね。
+    　選択肢 → ローカル　または　リモート
+    ==================================================== -->
+
+<div class="question" id="q0">
+    <div class="q-title">Q1. どこで操作する？</div>
+    <div class="q-text">
+        <code>git add .</code>　<code>git commit</code>　<code>git push</code><br>
+        これらのコマンドは「ローカル」と「リモート」どちらで実行する？
+    </div>
+    <div class="edit-zone" id="code0"></div>
+    <div class="hint">💡 VSCode のターミナルで打つコマンドだよ</div>
+    <div class="feedback" id="fb0"></div>
+</div>
+<!-- Q1の答えをここに書く -->
+    <div id="answer0" data-answer="" style="display:none"></div>
+
+<!-- ====================================================
+    問題: clone のあと、PRを出すまでの作業の流れを
+            正しい順番で選ぼう。
+
+    　① ブランチを作る（git switch -c）
+    　② コードを書いて add & commit する
+    　③ git push する
+    　④ GitHub ブラウザで PR を作る
+
+    ★ Q2の答えをここに書く ★
+    下の data-answer="" の " " の中に答えを入力してね。
+    　選択肢 → ①②③④　または　②①③④　または　①③②④
+    ==================================================== -->
+
+<div class="question" id="q1">
+    <div class="q-title">Q2. 作業の正しい流れは？</div>
+    <div class="q-text">
+        clone したあと、PR を出すまでの順番はどれ？<br>
+        ① ブランチを作る　② add &amp; commit　③ push　④ PR を作る
+    </div>
+    <div class="edit-zone" id="code1"></div>
+    <div class="hint">💡 ブランチを切ってから作業 → 記録 → 送る → 報告 の流れだよ</div>
+    <div class="feedback" id="fb1"></div>
+</div>
+<!-- ★ Q2の答えをここに書く ★ -->
+    <div id="answer1" data-answer="" style="display:none"></div>
+
+
+<!-- ====================================================
+    問題: git push が完了したあと、
+            GitHub（ブラウザ）で何をすれば作業完了？
+
+    ★ Q3の答えをここに書く ★
+    下の data-answer="" の " " の中に答えを入力してね。
+    　選択肢 → Issueを作る　または　PRを作る　または　cloneし直す
+    ==================================================== -->
+
+<div class="question" id="q2">
+    <div class="q-title">Q3. push のあと、ブラウザで何をする？</div>
+    <div class="q-text">
+    <code>git push</code> が完了！<br>
+    次に GitHub（ブラウザ）でやることは何？
+    </div>
+    <div class="edit-zone" id="code2"></div>
+    <div class="hint">💡 変更を main に「合流させてください」とお願いする機能だよ</div>
+    <div class="feedback" id="fb2"></div>
+</div>
+<!-- Q3の答えをここに書く  -->
+<div id="answer2" data-answer="" style="display:none"></div>
+
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
